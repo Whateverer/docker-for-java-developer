@@ -41,3 +41,18 @@ Docker로 작업하는 데는 두 가지 측면이 있다.
 ### How to Run Docker Outside Linux? Linux 환경 밖에서 Docker는 어떻게 실행되는가?
 native하게 원래 Docker는 Linux 밖에서 실행되지 않는다. 그래서 window나 mac을 사용하는 사람은 가상머신을 이용해야 한다. (Docker의 백그라운드에서 리눅스 기반의 OS가 실행되어야 함)
 
+## 7. 이제 Docker Toolbox를 사용할 수 없음
+
+## 8. 설치 옵션
+### Window 10 Pro user 
+- Docker Desktop 설치 (가상머신을 제공)
+- Docker Desktop은 사실상 가상화된 Linux 머신이다.
+- Window 10 Pro에 가상화가 내장되어 있어 Docker Desktop에서 이것을 이용한다.
+
+### Mac Yosemite 10.10.3 or above
+- Docker Desktop 설치
+
+### Docker Desktop vs Docker Toolbox
+- Docker Desktop은 내장된 Linux 가상 머신을 활용한다.
+- Docker Toolbox는 타사 가상 머신 구현을 자동으로 다운로드한다.
+- Oracle을 이용한 Oracle VirtualBox
