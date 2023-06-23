@@ -27,3 +27,17 @@ Docker에서 이미지란 컨테이너를 만들 모든 환경설정들을 포�
 #### 가상머신 
 - 가상머신에는 각각의 커널이 존재한다. 
 - 그래서 가상머신은 비교적 무겁고 느리다.
+
+# 섹션 3장 Docker 설치
+## 5. BIOS에서 가상화 지원 실행
+## 6. 개발 및 프로덕션 시 Docker
+Docker를 이용하여 image를 빌드하고 컨테이너를 실행하는 최종 목표는 로컬에서 개발하고 테스트한 것과 동일한 이미지를 배포할 수 있게 되는 것
+완벽히 같은 방식으로 실행되어야 한다.
+Docker로 작업하는 데는 두 가지 측면이 있다.
+- Local Docker
+- targetting enviroment (공급자, 서버 등) => 여기에도 Docker를 설치해야 한다.
+
+실제로 컨테이너는 Linux의 개념이다. 컨테이너는 Linux에서 실행되는 프로세스일 뿐이다.
+### How to Run Docker Outside Linux? Linux 환경 밖에서 Docker는 어떻게 실행되는가?
+native하게 원래 Docker는 Linux 밖에서 실행되지 않는다. 그래서 window나 mac을 사용하는 사람은 가상머신을 이용해야 한다. (Docker의 백그라운드에서 리눅스 기반의 OS가 실행되어야 함)
+
