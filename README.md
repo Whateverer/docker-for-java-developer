@@ -56,3 +56,9 @@ native하게 원래 Docker는 Linux 밖에서 실행되지 않는다. 그래서 
 - Docker Desktop은 내장된 Linux 가상 머신을 활용한다.
 - Docker Toolbox는 타사 가상 머신 구현을 자동으로 다운로드한다.
 - Oracle을 이용한 Oracle VirtualBox
+
+## 11. 이미지 다운로드
+### 명령어
+```
+docker pull <image명>
+```
