@@ -57,8 +57,26 @@ native하게 원래 Docker는 Linux 밖에서 실행되지 않는다. 그래서 
 - Docker Toolbox는 타사 가상 머신 구현을 자동으로 다운로드한다.
 - Oracle을 이용한 Oracle VirtualBox
 
+# 섹션 4장 배포 시나리오
 ## 11. 이미지 다운로드
 ### 명령어
 ```
 docker pull <image명>
+```
+
+## 12. 컨테이너 실행
+### Dockerfile
+- Dockerfile에서 war파일의 이름을 아는 것은 중요하다. (해당 애플리케이션이 실행될 컨텍스트가 되기 때문)
+- 이미지를 실행하기 위해서 쓰는 명령어
+```
+docker container run <image명>
+```
+docker에는 배포 시에 실제로 컨테이너를 실행할 대 배포자는 컨테이너의 어떤 부분을 외부세계에 표시할 것인지 선택할 수 있다.
+- 포트를 연결해야 한다면 옵션을 준다.
+```
+docker container run -p 8080:8080 virtualpairprogrammers/fleetman-webapp
+```
+- 다음 명령어를 실행하면 실행 중인 모든 컨테이너 목록이 나타난다.
+```
+docker container ls
 ```
