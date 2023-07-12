@@ -80,3 +80,13 @@ docker container run -p 8080:8080 virtualpairprogrammers/fleetman-webapp
 ```
 docker container ls
 ```
+
+## 13. 포트 매핑
+- 실행중인 컨테이너 중지
+```
+docker container stop <container ID>
+```
+- 포트 설정을 바꾸면 localhost:포트번호로 접근이 가능하다. (보안적임)
+```
+docker container run -p 포트번호:8080 virtualpairprogrammers/fleetman-webapp
+```
