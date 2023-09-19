@@ -90,3 +90,9 @@ docker container stop <container ID>
 ```
 docker container run -p 포트번호:8080 virtualpairprogrammers/fleetman-webapp
 ```
+
+# 섹션 5장 컨테이너 관리
+## 15. Docker Hub
+- 도커 허브는 Java의 Maven Repository와 흡사하며, 미리 도커 허브에 이미지를 올려두면 도커가 실행되는 어디서든 내려받아 실행할 수 있다.
+- 각 Repository에는 이미지가 포함되어 있다.
+- Repository는 public과 private으로 나뉜다.
