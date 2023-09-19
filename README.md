@@ -98,7 +98,7 @@ docker container run -p 포트번호:8080 virtualpairprogrammers/fleetman-webapp
 - Repository는 public과 private으로 나뉜다.
 
 ## 16. 베이스 이미지 찾기
-- Java 애플리케이션을 컨테이너에 배포하라는 요청을 받았다. Ubuntu Linux 기반으로 해야할 때 무엇부터 해야할까?
-- 베이스 이미지를 찾아야 한다.
-- ubuntu를 찾으면 official로 pull 받으면 된다.
-- 이미지는 수정할 수 없기 때문에 이미 존재하는 이미지 + 쌓아올릴 이미지를 합쳐서 또 다른 이미지를 생성할 수 있다.
+Java 애플리케이션을 컨테이너에 배포하라는 요청을 받았다. Ubuntu Linux 기반으로 해야할 때 무엇부터 해야할까?
+1. 베이스 이미지를 찾아야 한다.
+2. ubuntu를 찾으면 official로 pull 받으면 된다.
+3. 이미지는 수정할 수 없기 때문에 이미 존재하는 이미지 + 쌓아올릴 이미지를 합쳐서 또 다른 이미지를 생성할 수 있다.
