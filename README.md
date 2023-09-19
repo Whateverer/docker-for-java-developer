@@ -96,3 +96,9 @@ docker container run -p 포트번호:8080 virtualpairprogrammers/fleetman-webapp
 - 도커 허브는 Java의 Maven Repository와 흡사하며, 미리 도커 허브에 이미지를 올려두면 도커가 실행되는 어디서든 내려받아 실행할 수 있다.
 - 각 Repository에는 이미지가 포함되어 있다.
 - Repository는 public과 private으로 나뉜다.
+
+## 16. 베이스 이미지 찾기
+- Java 애플리케이션을 컨테이너에 배포하라는 요청을 받았다. Ubuntu Linux 기반으로 해야할 때 무엇부터 해야할까?
+- 베이스 이미지를 찾아야 한다.
+- ubuntu를 찾으면 official로 pull 받으면 된다.
+- 이미지는 수정할 수 없기 때문에 이미 존재하는 이미지 + 쌓아올릴 이미지를 합쳐서 또 다른 이미지를 생성할 수 있다.
